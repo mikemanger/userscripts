@@ -1,0 +1,48 @@
+// ==UserScript==
+// @name        GameDeals table highlighter
+// @namespace   ohmanger
+// @grant       GM_xmlhttpRequest
+// @include     https://www.reddit.com/r/GameDeals/comments/*
+// @require     http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
+// @updateURL   https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
+// @downloadURL https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
+// @version     1.0.0
+// ==/UserScript==
+
+this.$ = this.jQuery = jQuery.noConflict(true);
+
+// t2_bukfv is /u/dEnissay on reddit
+$( '.author.id-t2_bukfv' ).each( function( index ) {
+
+	var table_rows = $( this ).parent().parent().find( '.usertext-body tbody tr' );
+
+	table_rows.each( function ( index ) {
+		var tr = $(this),
+		    app_url = tr.html().match( /http:\/\/store\.steampowered\.com\/app\/(\d*)\//ig );
+
+		// Skip if no steam URL found
+		if ( app_url === null ) {
+			return 'continue';
+		}
+
+		GM_xmlhttpRequest ( {
+			method:  "GET",
+			url:     app_url[0],
+			onload:  function ( response ) {
+				var is_logged_in = response.responseText.indexOf( "'Logged In', 'true'" ) > -1;
+				if ( is_logged_in ) {
+					var in_library = response.responseText.indexOf( '<div class="already_in_library">' ) > -1;
+
+					if ( in_library ) {
+						tr.css( 'background', 'green' );
+					} else {
+						var in_wishlist = response.responseText.indexOf( '<div id="add_to_wishlist_area_success"' ) === -1;
+						if ( in_wishlist ) {
+							tr.css( 'background', 'blue' );
+						}
+					}
+				}
+			}
+		});
+	});
+});

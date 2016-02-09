@@ -42,11 +42,11 @@ $( '.sitetable' ).on( 'click', 'button.gdth-get-status', function( event ) {
 					var in_library = response.responseText.indexOf( '<div class="already_in_library">' ) > -1;
 
 					if ( in_library ) {
-						tr.css( 'background', 'green' );
+						tr.css( 'background', 'lightgreen' );
 					} else {
 						var in_wishlist = response.responseText.indexOf( '<div id="add_to_wishlist_area_success"' ) === -1;
 						if ( in_wishlist ) {
-							tr.css( 'background', 'blue' );
+							tr.css( 'background', 'lightblue' );
 						}
 					}
 				}

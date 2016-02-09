@@ -14,7 +14,15 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 // t2_bukfv is /u/dEnissay on reddit
 $( '.author.id-t2_bukfv' ).each( function( index ) {
 
-	var table_rows = $( this ).parent().parent().find( '.usertext-body tbody tr' );
+	var table = $( this ).parent().parent().find( '.usertext-body table' );
+	table.after( '<button class="gdth-get-status">Get Steam status</button>' );
+
+});
+
+$( '.sitetable' ).on( 'click', 'button.gdth-get-status', function( event ) {
+	event.preventDefault();
+
+	var table_rows = $( this ).siblings( 'table' ).find( 'tbody tr' );
 
 	table_rows.each( function ( index ) {
 		var tr = $(this),

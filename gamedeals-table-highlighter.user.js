@@ -11,8 +11,12 @@
 
 this.$ = this.jQuery = jQuery.noConflict(true);
 
-// t2_bukfv is /u/dEnissay on reddit
-$( '.author.id-t2_bukfv' ).each( function( index ) {
+var users = [
+	'.author.id-t2_bukfv', // /u/dEnissay
+	'.author.id-t2_in61j', // /u/ABOOD-THE-PLAYER
+];
+
+$( users.join(',') ).each( function( index ) {
 
 	var table = $( this ).parent().parent().find( '.usertext-body table' );
 	table.after( '<button class="gdth-get-status">Get Steam status</button>' );

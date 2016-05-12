@@ -6,7 +6,7 @@
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js
 // @updateURL   https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
 // @downloadURL https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
-// @version     1.1.1
+// @version     1.1.2
 // ==/UserScript==
 
 this.$ = this.jQuery = jQuery.noConflict(true);

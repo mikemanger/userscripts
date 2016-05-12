@@ -41,7 +41,7 @@ $( '.sitetable' ).on( 'click', 'button.gdth-get-status', function( event ) {
 			method:  "GET",
 			url:     app_url[0],
 			onload:  function ( response ) {
-				var is_logged_in = response.responseText.indexOf( "'Logged In', 'true'" ) > -1;
+				var is_logged_in = response.responseText.indexOf( "Logout();" ) > -1;
 				if ( is_logged_in ) {
 					var in_library = response.responseText.indexOf( '<div class="already_in_library">' ) > -1;
 

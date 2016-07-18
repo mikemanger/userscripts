@@ -14,6 +14,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 var users = [
 	'.author.id-t2_bukfv', // /u/dEnissay
 	'.author.id-t2_in61j', // /u/ABOOD-THE-PLAYER
+	'.author.id-t2_1pry1', // /u/pantsu
 ];
 
 $( users.join(',') ).each( function( index ) {

@@ -12,8 +12,8 @@
 this.$ = this.jQuery = jQuery.noConflict(true);
 
 var users = [
-	'.author.id-t1_d9vx43k', // /u/NCPereira
 	'.author.id-t2_bukfv', // /u/dEnissay
+	'.author.id-t2_dau7q', // /u/NCPereira
 	'.author.id-t2_in61j', // /u/ABOOD-THE-PLAYER
 	'.author.id-t2_1pry1', // /u/pantsu
 	'.author.id-t2_2uod1', // /u/Custard

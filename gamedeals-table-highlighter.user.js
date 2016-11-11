@@ -3,7 +3,7 @@
 // @namespace   ohmanger
 // @grant       GM_xmlhttpRequest
 // @include     https://www.reddit.com/r/GameDeals/comments/*
-// @require     http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js
+// @require     https://code.jquery.com/jquery-2.2.4.min.js
 // @updateURL   https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
 // @downloadURL https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
 // @version     1.1.5

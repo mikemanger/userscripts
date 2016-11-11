@@ -6,12 +6,13 @@
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js
 // @updateURL   https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
 // @downloadURL https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
-// @version     1.1.4
+// @version     1.1.5
 // ==/UserScript==
 
 this.$ = this.jQuery = jQuery.noConflict(true);
 
 var users = [
+	'.author.id-t1_d9vx43k', // /u/NCPereira
 	'.author.id-t2_bukfv', // /u/dEnissay
 	'.author.id-t2_in61j', // /u/ABOOD-THE-PLAYER
 	'.author.id-t2_1pry1', // /u/pantsu

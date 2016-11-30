@@ -55,6 +55,8 @@ $( '.sitetable' ).on( 'click', 'button.gdth-get-status', function( event ) {
 						var in_wishlist = response.responseText.indexOf( '<div id="add_to_wishlist_area_success"' ) === -1;
 						if ( in_wishlist ) {
 							tr.css( 'background', 'lightblue' );
+						} else {
+							tr.css( 'background', '' );
 						}
 					}
 				}

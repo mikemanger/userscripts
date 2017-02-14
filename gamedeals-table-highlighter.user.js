@@ -3,10 +3,10 @@
 // @namespace   ohmanger
 // @grant       GM_xmlhttpRequest
 // @include     https://www.reddit.com/r/GameDeals/comments/*
-// @require     https://code.jquery.com/jquery-2.2.4.min.js
+// @require     https://code.jquery.com/jquery-3.1.1.slim.min.js
 // @updateURL   https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
 // @downloadURL https://raw.githubusercontent.com/ohmanger/userscripts/master/gamedeals-table-highlighter.user.js
-// @version     1.1.7
+// @version     1.1.8
 // ==/UserScript==
 
 this.$ = this.jQuery = jQuery.noConflict(true);

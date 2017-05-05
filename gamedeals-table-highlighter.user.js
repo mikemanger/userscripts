@@ -15,10 +15,12 @@ var users = [
 	'.author.id-t2_bukfv', // /u/dEnissay
 	'.author.id-t2_b1jfp', // /u/Ignarius
 	'.author.id-t2_dau7q', // /u/NCPereira
+	'.author.id-t2_hxn27', // /u/granitosaurus
 	'.author.id-t2_in61j', // /u/ABOOD-THE-PLAYER
 	'.author.id-t2_1pry1', // /u/pantsu
 	'.author.id-t2_2uod1', // /u/Custard
   	'.author.id-t2_4rd82', // /u/incontrollable
+  	'.author.id-t2_7e6j6', // /u/alms_
 ];
 
 $( users.join(',') ).each( function( index ) {

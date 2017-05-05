@@ -19,11 +19,11 @@ var users = [
 	'.author.id-t2_in61j', // /u/ABOOD-THE-PLAYER
 	'.author.id-t2_1pry1', // /u/pantsu
 	'.author.id-t2_2uod1', // /u/Custard
-  	'.author.id-t2_4rd82', // /u/incontrollable
-  	'.author.id-t2_7e6j6', // /u/alms_
+	'.author.id-t2_4rd82', // /u/incontrollable
+	'.author.id-t2_7e6j6', // /u/alms_
 ];
 
-$( users.join(',') ).each( function( index ) {
+$( users.join(',') ).each( function() {
 
 	var table = $( this ).parent().parent().find( '.usertext-body table' );
 	table.after( '<button class="gdth-get-status">Get Steam status</button>' );
@@ -35,7 +35,7 @@ $( '.sitetable' ).on( 'click', 'button.gdth-get-status', function( event ) {
 
 	var table_rows = $( this ).siblings( 'table' ).find( 'tbody tr' );
 
-	table_rows.each( function ( index ) {
+	table_rows.each( function() {
 		var tr = $(this),
 		    app_url = tr.html().match( /http:\/\/store\.steampowered\.com\/app\/(\d*)\//ig );
 
@@ -44,11 +44,11 @@ $( '.sitetable' ).on( 'click', 'button.gdth-get-status', function( event ) {
 			return 'continue';
 		}
 
-		GM_xmlhttpRequest ( {
-			method:  "GET",
+		GM_xmlhttpRequest({
+			method:  'GET',
 			url:     app_url[0],
-			onload:  function ( response ) {
-				var is_logged_in = response.responseText.indexOf( "Logout();" ) > -1;
+			onload:  function( response ) {
+				var is_logged_in = response.responseText.indexOf( 'Logout();' ) > -1;
 				if ( is_logged_in ) {
 					var in_library = response.responseText.indexOf( '<div class="already_in_library">' ) > -1;
 

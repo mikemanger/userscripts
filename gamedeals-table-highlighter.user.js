@@ -38,7 +38,7 @@ $( '.sitetable' ).on( 'click', 'button.gdth-get-status', function( event ) {
 
 	table_rows.each( function() {
 		var tr = $(this),
-		    app_url = tr.html().match( /http:\/\/store\.steampowered\.com\/app\/(\d*)\//ig );
+		    app_url = tr.html().match( /http(s)?:\/\/store\.steampowered\.com\/app\/(\d*)\//ig );
 
 		// Skip if no steam URL found
 		if ( app_url === null ) {

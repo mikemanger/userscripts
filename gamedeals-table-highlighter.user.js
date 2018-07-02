@@ -17,6 +17,7 @@ var users = [
 	'.author.id-t2_dau7q', // /u/NCPereira
 	'.author.id-t2_hxn27', // /u/granitosaurus
 	'.author.id-t2_in61j', // /u/ABOOD-THE-PLAYER
+	'.author.id-t2_qfmsqom', // /u/lillje
 	'.author.id-t2_1pry1', // /u/pantsu
 	'.author.id-t2_2uod1', // /u/Custard
 	'.author.id-t2_4rd82', // /u/incontrollable

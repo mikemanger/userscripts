@@ -21,6 +21,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
+.table td,
+.table th {
+	border-color: #aaa;
+}
+
+.table-striped tbody tr:nth-child(odd) td {
+	background-color: #222;
+}
+
 .nav-tabs>.active > a,
 .nav-tabs>.active > a:hover,
 .table tbody tr:hover td,
@@ -41,7 +50,11 @@ tr:hover .bsButton {
 	border-color: #333;
 }
 
+.env-settings,
 .footer,
+.no-data,
+.progress-bar,
+.traceback,
 .well {
 	background: #1F1B24;
 }

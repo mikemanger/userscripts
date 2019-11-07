@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Rollbar Dark Theme
 @namespace   mikemanger
-@version     1.0.0
+@version     1.0.1
 @homepageURL https://github.com/mikemanger/userscripts/
 @updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/rollbar-dark-theme.user.css
 @license     CC-BY-4.0
@@ -9,12 +9,12 @@
 
 @-moz-document domain(rollbar.com) {
 body {
-    background: #1F1B24;
-    color: #fff;
+	background: #1F1B24;
+	color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: lightblue;
+	color: lightblue;
 }
 
 .nav-tabs > li > a {
@@ -22,11 +22,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-tabs>.active > a,
-.nav-tabs>.active > a:hover {
+.nav-tabs>.active > a:hover,
+.table tbody tr:hover td,
+.table tbody tr:hover {
 	background: #333;
 }
 
+.bsButton {
+	color: white;
+}
+
+tr:hover .bsButton {
+	background-color: #333 !important;
+}
+
+.bsContainer .autocomplete {
+	background: #333;
+	border-color: #333;
+}
+
+.footer,
 .well {
-    background: #1F1B24;
+	background: #1F1B24;
+}
+
+.project-item-list > div > div > div:first-child {
+	background: #aaa;
 }
 }

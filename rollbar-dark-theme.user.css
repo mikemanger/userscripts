@@ -50,6 +50,10 @@ tr:hover .bsButton {
 	border-color: #333;
 }
 
+.project-item-list canvas {
+	filter: invert(1);
+}
+
 .env-settings,
 .footer,
 .no-data,

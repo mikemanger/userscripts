@@ -1,0 +1,139 @@
+/* ==UserStyle==
+@name        Opera Dark Theme
+@namespace   mikemanger
+@version     1.0.0
+@homepageURL https://github.com/mikemanger/userscripts/
+@updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/opera-dark-theme.user.css
+@license     CC-BY-4.0
+==/UserStyle== */
+
+@-moz-document domain("blogs.opera.com") {
+	body,
+	main {
+		color: #eee;
+		background: #333;
+	}
+
+	header.ns--hf .hf--primary {
+		border-color: #444;
+	}
+
+	header.ns--hf .hf--main-nav .hf--main-nav-items a:hover,
+	header.ns--hf .hf--main-nav .hf--main-nav-items .hf--more label:hover,
+	header.ns--hf .hf--main-nav .hf--main-nav-items a.hf--selected,
+	header.ns--hf .hf--main-nav .hf--main-nav-items .hf--more label.hf--selected {
+		color: #eee;
+	}
+
+	header.ns--hf .hf--primary .hf--menu .hf--more .hf--more-list>ul,
+	header.ns--hf .hf--supplementary {
+		background: #444;
+		box-shadow: none;
+		border-color: #333;
+	}
+
+	header.ns--hf .hf--main-nav a {
+		color: #ddd;
+	}
+
+	.single-post .ns--blog .article-tags,
+	.page .ns--blog .article-tags,
+	.ns--blog .pagination {
+		border-color: #444;
+	}
+
+	.single main,
+	.page main,
+	.ns--blog .blog-main article {
+		background: #333;
+		color: #eee;
+	}
+
+	.single-post .ns--blog .entry-title,
+	.page .ns--blog .entry-title,
+	.ns--blog .entries-list .entry-title,
+	.ns--blog .widget_latest_downloads .bottom-link,
+	.ns--blog {
+		color: #eee;
+	}
+
+	.ns--blog a:hover {
+		color: #ddd !important;
+	}
+
+	.ns--blog .blog-main article {
+		border-color: #444;
+	}
+
+	.ns--blog .widget {
+		background: #333;
+		border-color: #444;
+	}
+
+	.ns--blog .widget h2.widget-title {
+		color: #eee;
+		border-color: #444;
+	}
+
+	.ns--blog .widget_archive_by_year .widget-archive-list {
+		border-color: #444;
+	}
+
+	.ns--blog .pagination a:hover,
+	.ns--blog .widget a:hover {
+		color: #111 !important;
+	}
+
+	.ns--blog .social.sidebar,
+	.single-post .ns--blog .promo-box,
+	.hf__footer {
+		display: none;
+	}
+
+	#rpbt-related-gallery-1 img {
+		border-color: #444;
+	}
+
+	#nodebb-comments ul>li:last-child {
+		background: #333;
+	}
+
+	#nodebb-comments .profile-image {
+		box-shadow: none;
+	}
+
+	#nodebb-comments .topic-item,
+	#nodebb-comments .topic-text {
+		color: #eee;
+	}
+
+	#nodebb-comments .btn.btn-primary {
+		border-color: #444;
+	}
+
+	#mc_embed_signup input.email,
+	.not-opera-mini.ns--blog .form-gray input,
+	#nodebb-comments .form-control {
+		background: #444;
+		border-color: #555;
+		color: #eee;
+	}
+
+	#nodebb-comments .form-control:focus {
+		border-color: #444;
+		box-shadow: none;
+	}
+
+	#nodebb-comments .topic-body {
+		box-shadow: none;
+		border-color: #444;
+	}
+
+	#nodebb-comments .reply-label {
+		background: #444;
+	}
+
+	#nodebb-comments .reply-label:hover {
+		background: #555;
+	}
+}

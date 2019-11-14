@@ -1,0 +1,70 @@
+/* ==UserStyle==
+@name        WordPress.org Dark Theme
+@namespace   mikemanger
+@version     1.0.0
+@homepageURL https://github.com/mikemanger/userscripts/
+@updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/wordpress-org-dark-theme.user.css
+@license     CC-BY-4.0
+==/UserStyle== */
+
+@-moz-document domain(developer.wordpress.org) {
+	.single-handbook #page,
+	.single-handbook #primary {
+		background: #333;
+		color: #eee;
+	}
+
+	.single-handbook #secondary {
+		background: #444;
+	}
+
+	.single-handbook .site-main p, .single-handbook .site-main ol, .single-handbook .site-main ul {
+		color: #eee;
+	}
+
+	.devhub-wrap a {
+		color: lightblue;
+	}
+
+	div[class*="-table-of-contents-container"] > ul > li.open > div > a:hover {
+		background-color: #006699;
+	}
+
+	div[class*="-table-of-contents-container"] .current-menu-ancestor:not(.open) .expandable .dashicons:not(:focus),
+	div[class*="-table-of-contents-container"] .current-menu-item > .expandable .dashicons:not(:focus),
+	div[class*="-table-of-contents-container"] ul li .dashicons {
+		background: #333;
+	}
+
+	div[class*="-table-of-contents-container"] > ul > li.open > div > a:not(:focus) {
+		color: #52c8ff;
+	}
+
+	.devhub-wrap .site-main h2,
+	.devhub-wrap .site-main h3,
+	.devhub-wrap .site-main h4,
+	.devhub-wrap .site-main h5,
+	.devhub-wrap .site-main h6,
+	code, pre {
+		color: #fff;
+	}
+
+	a.github-edit {
+		color: #eee;
+		background: #444;
+	}
+
+	.syntaxhighlighter,
+	.syntaxhighlighter .line.alt1,
+	.syntaxhighlighter .line.alt2 {
+		background: #888 !important;
+	}
+
+	.syntaxhighlighter .gutter {
+		color: #eee !important;
+	}
+
+	#wporg-footer {
+		display: none;
+	}
+}

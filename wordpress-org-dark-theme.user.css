@@ -79,6 +79,7 @@
 		border-color: #555;
 	}
 
+	.callout,
 	.devhub-wrap .single-wp-parser-function .comment-list li,
 	.devhub-wrap .single-wp-parser-function #comment-preview,
 	.devhub-wrap .single-wp-parser-method .comment-list li,

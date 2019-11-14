@@ -1,13 +1,14 @@
 /* ==UserStyle==
 @name        WordPress.org Dark Theme
 @namespace   mikemanger
-@version     1.0.0
+@version     1.0.1
 @homepageURL https://github.com/mikemanger/userscripts/
 @updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/wordpress-org-dark-theme.user.css
 @license     CC-BY-4.0
 ==/UserStyle== */
 
 @-moz-document domain(developer.wordpress.org) {
+	body,
 	.single-handbook #page,
 	.single-handbook #primary {
 		background: #333;
@@ -44,14 +45,64 @@
 	.devhub-wrap .site-main h3,
 	.devhub-wrap .site-main h4,
 	.devhub-wrap .site-main h5,
-	.devhub-wrap .site-main h6,
-	code, pre {
+	.devhub-wrap .site-main h6 {
 		color: #fff;
 	}
 
+	code,
+	pre,
+	hr,
 	a.github-edit {
 		color: #eee;
 		background: #444;
+	}
+
+	.site-main .table-of-contents {
+		background: #333;
+		border-color: #444;
+	}
+
+	.site-main .table-of-contents h2 {
+		border-color: #444;
+	}
+
+	.devhub-wrap #content table,
+	.devhub-wrap #content-area table,
+	.devhub-wrap #content table td,
+	.devhub-wrap #content-area table td {
+		border-color: #555;
+	}
+
+	.devhub-wrap #content table th,
+	.devhub-wrap #content-area table th {
+		background: #444;
+		border-color: #555;
+	}
+
+	.devhub-wrap .single-wp-parser-function .comment-list li,
+	.devhub-wrap .single-wp-parser-function #comment-preview,
+	.devhub-wrap .single-wp-parser-method .comment-list li,
+	.devhub-wrap .single-wp-parser-method #comment-preview,
+	.devhub-wrap .single-wp-parser-hook .comment-list li,
+	.devhub-wrap .single-wp-parser-hook #comment-preview,
+	.devhub-wrap .single-wp-parser-class .comment-list li,
+	.devhub-wrap .single-wp-parser-class #comment-preview,
+	.devhub-wrap .single-wp-parser-function .comment-meta,
+	.devhub-wrap .single-wp-parser-method .comment-meta,
+	.devhub-wrap .single-wp-parser-hook .comment-meta,
+	.devhub-wrap .single-wp-parser-class .comment-meta {
+		background: #444;
+	}
+
+	.devhub-wrap .single-wp-parser-function .comment-list li.depth-1,
+	.devhub-wrap .single-wp-parser-function #comment-preview,
+	.devhub-wrap .single-wp-parser-method .comment-list li.depth-1,
+	.devhub-wrap .single-wp-parser-method #comment-preview,
+	.devhub-wrap .single-wp-parser-hook .comment-list li.depth-1,
+	.devhub-wrap .single-wp-parser-hook #comment-preview,
+	.devhub-wrap .single-wp-parser-class .comment-list li.depth-1,
+	.devhub-wrap .single-wp-parser-class #comment-preview {
+		border-color: #555;
 	}
 
 	.syntaxhighlighter,

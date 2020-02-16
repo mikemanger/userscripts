@@ -1,0 +1,47 @@
+/* ==UserStyle==
+@name        Parkrun dark theme
+@namespace   mikemanger
+@version     1.0.0
+@homepageURL https://github.com/mikemanger/userscripts/
+@updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/parkrun-dark-theme.user.css
+@license     CC-BY-4.0
+@var         text user-one "Highlight user one" Firstname SURNAME
+@var         text user-two "Highlight user two" Firstname SURNAME
+@var         text user-three "Highlight user three" Firstname SURNAME
+==/UserStyle== */
+
+@-moz-document domain("parkrun.org.uk") {
+[data-name="var(--user-one)"].Results-table-row td,
+[data-name="var(--user-two)"].Results-table-row td,
+[data-name="var(--user-three)"].Results-table-row td {
+    background: green;
+}
+
+body {
+    background: #333;
+    color: #f2f2f2;
+}
+
+
+h1,
+h2,
+h3,
+.Results-table-td {
+    color: #f3f3f3;
+}
+
+.headerbar,
+.Results-table,
+.statscontainer {
+    background: #222;
+}
+
+.Results-table-td {
+    border-color: #444;
+}
+
+.headerbarprlogo,
+.menuButton .line {
+    filter: invert(1) hue-rotate(180deg);
+}
+}

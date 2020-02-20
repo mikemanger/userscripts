@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Rollbar Dark Theme
 @namespace   mikemanger
-@version     1.0.1
+@version     1.0.2
 @homepageURL https://github.com/mikemanger/userscripts/
 @updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/rollbar-dark-theme.user.css
 @license     CC-BY-4.0
@@ -65,5 +65,10 @@ tr:hover .bsButton {
 
 .project-item-list > div > div > div:first-child {
 	background: #aaa;
+}
+
+#react-traceback {
+	background: beige;
+	color: #222;
 }
 }

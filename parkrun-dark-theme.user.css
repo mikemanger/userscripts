@@ -22,17 +22,19 @@ body {
     color: #f2f2f2;
 }
 
-
 h1,
 h2,
 h3,
 h4,
 #access a,
+.entry-title a,
 .Results-table-td {
     color: #f3f3f3;
 }
 
 article,
+div[class*="-sidebar-width"],
+#mainleft,
 #page:before,
 #secondary,
 .courseleft,
@@ -40,7 +42,8 @@ article,
 .homeleft,
 .homeright,
 .Results-table,
-.statscontainer {
+.statscontainer,
+.threecoldiv {
     background: #222;
 }
 
@@ -48,6 +51,7 @@ article,
     border-color: #444;
 }
 
+.headerbarjuniorprlogo,
 .headerbarprlogo,
 .menuButton .line {
     filter: invert(1) hue-rotate(180deg);

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Parkrun dark theme
 @namespace   mikemanger
-@version     1.0.0
+@version     1.0.1
 @homepageURL https://github.com/mikemanger/userscripts/
 @updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/parkrun-dark-theme.user.css
 @license     CC-BY-4.0
@@ -26,11 +26,19 @@ body {
 h1,
 h2,
 h3,
+h4,
+#access a,
 .Results-table-td {
     color: #f3f3f3;
 }
 
-.headerbar,
+article,
+#page:before,
+#secondary,
+.courseleft,
+.courseright,
+.homeleft,
+.homeright,
 .Results-table,
 .statscontainer {
     background: #222;

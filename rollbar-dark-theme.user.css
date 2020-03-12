@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name        Rollbar Dark Theme
 @namespace   mikemanger
-@version     1.0.2
+@version     1.0.3
 @homepageURL https://github.com/mikemanger/userscripts/
 @updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/rollbar-dark-theme.user.css
 @license     CC-BY-4.0
 ==/UserStyle== */
 
-@-moz-document domain(rollbar.com) {
+@-moz-document regexp("https://rollbar.com(?!/callback).*") {
 body {
 	background: #1F1B24;
 	color: #fff;

@@ -12,7 +12,8 @@ body {
     filter: invert(1) hue-rotate(160deg) !important;
 }
 
-[data-test-automation-id="imageCard"] {
+[data-test-automation-id="imageCard"],
+.avatar-container {
     filter: invert(1) hue-rotate(160deg) !important;
 }
 }

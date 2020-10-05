@@ -13,6 +13,7 @@ body {
 }
 
 [data-test-automation-id="imageCard"],
+[data-test-automation-id="PhotoEditContent"],
 .avatar-container {
     filter: invert(1) hue-rotate(160deg) !important;
 }

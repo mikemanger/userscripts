@@ -1,0 +1,9 @@
+@-moz-document url-prefix("https://app.ringcentral.com/") {
+body {
+    filter: invert(1) hue-rotate(180deg) !important;
+}
+
+[data-test-automation-id="imageCard"] {
+    filter: invert(1) hue-rotate(160deg) !important;
+}
+}

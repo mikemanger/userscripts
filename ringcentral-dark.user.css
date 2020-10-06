@@ -12,7 +12,8 @@ body {
     filter: invert(1) hue-rotate(180deg) !important;
 }
 
-canvas {
+canvas,
+img[src$=".gif"] {
     filter: invert(1) hue-rotate(180deg) !important;
 }
 }

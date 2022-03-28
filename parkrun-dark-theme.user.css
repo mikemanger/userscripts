@@ -1,20 +1,27 @@
 /* ==UserStyle==
 @name        Parkrun dark theme
 @namespace   mikemanger
-@version     1.0.2
+@version     1.1.0
 @homepageURL https://github.com/mikemanger/userscripts/
 @updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/parkrun-dark-theme.user.css
 @license     CC-BY-4.0
-@var         text user-one "Highlight user one" Firstname SURNAME
-@var         text user-two "Highlight user two" Firstname SURNAME
-@var         text user-three "Highlight user three" Firstname SURNAME
+@preprocessor     uso
+@advanced         text user-one "Highlight user one" Firstname SURNAME
+@advanced         text user-two "Highlight user two" Firstname SURNAME
+@advanced         text user-three "Highlight user three" Firstname SURNAME
 ==/UserStyle== */
 
 @-moz-document domain("parkrun.org.uk") {
-[data-name="var(--user-one)"].Results-table-row td,
-[data-name="var(--user-two)"].Results-table-row td,
-[data-name="var(--user-three)"].Results-table-row td {
+[data-name="/*[[user-one]]*/"].Results-table-row td,
+[data-name="/*[[user-two]]*/"].Results-table-row td,
+[data-name="/*[[user-three]]*/"].Results-table-row td {
     background: green;
+}
+    
+[data-name="/*[[user-one]]*/"].Results-table-row .detailed,
+[data-name="/*[[user-two]]*/"].Results-table-row .detailed,
+[data-name="/*[[user-three]]*/"].Results-table-row .detailed {
+    color: #fff;
 }
 
 body {

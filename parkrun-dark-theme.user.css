@@ -70,8 +70,8 @@ table#results,
     filter: invert(1) hue-rotate(180deg);
 }
     
-.entry-content p,
-.entry-content p span {
+.entry-content p[style],
+.entry-content span[style] {
     color: #fff !important;
 }
 }

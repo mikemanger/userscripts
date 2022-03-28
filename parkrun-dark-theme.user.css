@@ -38,6 +38,8 @@ h4,
 #results a:link,
 #results a:visited,
 #results th,
+#results th a:link,
+#results th a:visited,
 .entry-title a,
 .Results-table-td {
     color: #f3f3f3;
@@ -47,6 +49,10 @@ h4,
 #results a:active {
     color: #ffa300;
     text-decoration: underline;
+}
+    
+#results .sortarrow {
+    filter: none;
 }
 
 article,
@@ -62,13 +68,19 @@ table#results,
 .homeright,
 .Results-table,
 .statscontainer,
-.threecoldiv {
+.threecoldiv,
+.ui-autocomplete {
     background: #222;
 }
 
 table#results,
+#results td,
 .Results-table-td {
     border-color: #444;
+}
+    
+#results .odd td:not(.bspacer) {
+    background: #333;
 }
 
 .headerbarjuniorprlogo,

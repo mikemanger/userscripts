@@ -27,14 +27,25 @@ h2,
 h3,
 h4,
 #access a,
+#results td,
+#results a:link,
+#results a:visited,
+#results th,
 .entry-title a,
 .Results-table-td {
     color: #f3f3f3;
+}
+    
+#results a:hover,
+#results a:active {
+    color: #ffa300;
+    text-decoration: underline;
 }
 
 article,
 div[class*="-sidebar-width"],
 footer,
+table#results,
 #mainleft,
 #page:before,
 #secondary,
@@ -48,6 +59,7 @@ footer,
     background: #222;
 }
 
+table#results,
 .Results-table-td {
     border-color: #444;
 }
@@ -56,5 +68,10 @@ footer,
 .headerbarprlogo,
 .menuButton .line {
     filter: invert(1) hue-rotate(180deg);
+}
+    
+.entry-content p,
+.entry-content p span {
+    color: #fff !important;
 }
 }

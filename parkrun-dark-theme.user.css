@@ -11,7 +11,7 @@
 @advanced         text user-three "Highlight user three" Firstname SURNAME
 ==/UserStyle== */
 
-@-moz-document domain("parkrun.org.uk") {
+@-moz-document domain("parkrun.org.uk"), domain("admin.parkrun.com") {
 [data-name="/*[[user-one]]*/"].Results-table-row td,
 [data-name="/*[[user-two]]*/"].Results-table-row td,
 [data-name="/*[[user-three]]*/"].Results-table-row td {
@@ -57,6 +57,7 @@ h4,
 
 article,
 div[class*="-sidebar-width"],
+div[class*="-and-pr"],
 footer,
 table#results,
 #mainleft,
@@ -66,6 +67,8 @@ table#results,
 .courseright,
 .homeleft,
 .homeright,
+.mapboxgl-ctrl-group,
+.reg-flag-link-div,
 .Results-table,
 .statscontainer,
 .threecoldiv,

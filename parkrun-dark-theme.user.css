@@ -86,6 +86,13 @@ table#results,
     background: #333;
 }
 
+table#rosterTable,
+table#rosterTable th,
+table#rosterTable td {
+    border-color: #444;
+    background: transparent;
+}
+
 .headerbarjuniorprlogo,
 .headerbarprlogo,
 .menuButton .line {

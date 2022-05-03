@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Parkrun dark theme
 @namespace   mikemanger
-@version     1.1.0
+@version     1.1.1
 @homepageURL https://github.com/mikemanger/userscripts/
 @updateURL   https://raw.githubusercontent.com/mikemanger/userscripts/master/parkrun-dark-theme.user.css
 @license     CC-BY-4.0
@@ -53,6 +53,7 @@ h4,
 #results th a:link,
 #results th a:visited,
 .entry-title a,
+.Results-modal,
 .Results-table-td {
     color: #f3f3f3;
 }
@@ -81,6 +82,7 @@ table#results,
 .homeright,
 .mapboxgl-ctrl-group,
 .reg-flag-link-div,
+.Results-modal-inner,
 .Results-table,
 .statscontainer,
 .threecoldiv,
